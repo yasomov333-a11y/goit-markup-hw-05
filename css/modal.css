@@ -51,14 +51,19 @@
 }
 
 .modal-close-icon {
+  fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover .modal-close-icon,
+.modal-close-btn:focus .modal-close-icon {
+  fill: #ffffff;
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   background-color: #404bbf;
   border: none;
-  fill: #ffffff;
 }
 
 .modal-title {
@@ -100,6 +105,13 @@
   background-color: transparent;
   padding-left: 38px;
   outline: transparent;
+  
+  /* Додані явні параметри типографіки */
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -126,7 +138,10 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
+  
+  /* Основний текст темно-синій, а не напівпрозорий */
+  color: #2e2f42;
+
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
@@ -134,6 +149,11 @@
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Плейсхолдер для textarea робимо світлішим */
+.modal-textarea::placeholder {
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-textarea:focus {

@@ -90,7 +90,7 @@
   border-radius: 4px;
   background-color: transparent;
   font-size: 12px;
-  line-height: 1.5;
+  line-height: 1.17; /* Змінили з 1.5 на 1.17 */
   letter-spacing: 0.04em;
   padding-left: 16px;
   color: #ffffff;
@@ -98,14 +98,15 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.subscribe-input:focus {
+  outline: none;
+  border-color: #31d0aa; /* Змінили з #4d5ae5 на #31d0aa */
+}
+
 .subscribe-input::placeholder {
   color: #ffffff;
 }
 
-.subscribe-input:focus {
-  outline: none;
-  border-color: #4d5ae5;
-}
 
 .subscribe-button {
   min-width: 165px;
@@ -128,7 +129,7 @@
 
 .subscribe-button:hover,
 .subscribe-button:focus {
-  background-color: #404bbf;
+  background-color: #31d0aa;
 }
 
 .subscribe-icon {
