@@ -133,9 +133,11 @@
 .modal-textarea {
   width: 100%;
   height: 120px;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  
+  /* Виправлена типографіка для textarea згідно з вимогами */
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   
   color: #434455;
 
